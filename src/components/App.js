@@ -1,8 +1,7 @@
 import React from "react";
-import { format } from "date-fns";
 import ExampleComponent from "./ExampleComponent";
+import TestComponent from './TestComponent';
 
-// Add your code own within the return statement
 function App() {
   return (
     <div className="App">
@@ -13,10 +12,12 @@ function App() {
         HTML, and also allows us to add in components, which are separate,
         self-contained chunks of JSX.
       </p>
-      <ExampleComponent />
+
+      {/* Only one instance of ExampleComponent */}
       <ExampleComponent />
 
-
+      {/* Include TestComponent as required */}
+      <TestComponent />
     </div>
   );
 }
